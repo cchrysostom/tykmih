@@ -10,8 +10,8 @@ import models.*;
 public class Application extends Controller {
 
     public static void index() {
-		System.out.println("System message from controller.");
-        render();
+        List<Question> questionList = Question.find("order by title").from(0).fetch(10);
+        render(questionList);
     }
 
 }

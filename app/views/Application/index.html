@@ -1,4 +1,28 @@
 #{extends 'main.html' /}
 #{set title:'Home' /}
 
-#{welcome /}
+#{if questionList.size() > 0}
+
+<div class="questions">
+    <h2>Question list</h2>
+    
+    #{list items:questionList, as:'ques'}
+    <div class="questionItem">
+        <span class="questionLabel">
+            ${ques.title}
+        </span>
+        <span class="questionShort">
+            ${ques.shortText}
+        </span>
+        
+    </div>
+    
+    #{/list}
+</div>
+#{/if}
+
+#{else}
+<div class="empty">
+    There are no questions in database.
+</div>
+#{/else}
