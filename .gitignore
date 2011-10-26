@@ -1,9 +1,16 @@
+.*
+!.gitignore
 /tmp
 /modules
 /lib
 /test-result
 /logs
 /nbproject
+<<<<<<< HEAD
 !.gitignore
+precompiled
+server.pid
+db
+log
 precompiled
 server.pid

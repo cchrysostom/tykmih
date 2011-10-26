@@ -24,7 +24,8 @@ public class BasicTest extends UnitTest {
     
     @Test
     public void createAndRetrieveQuestion() {
-        Question q = new Question("Phalanx", "What maneuver did Sparta...", "What maneuver did Sparta use with the Greeks?");
+        Category category = new Category("Cat1");
+        Question q = new Question("Phalanx", "What maneuver did Sparta...", "What maneuver did Sparta use with the Greeks?", category);
         q.save();
         
         Question quesRetr = Question.find("byTitle", "Phalanx").first();
@@ -35,7 +36,8 @@ public class BasicTest extends UnitTest {
     
     @Test
     public void createAndRetrieveAnswer() {
-        Question q = new Question("Question 2", "Short display q", "Long display question here.");
+        Category category = new Category("Cat2");
+        Question q = new Question("Question 2", "Short display q", "Long display question here.", category);
         q.save();
         
         Answer a = new Answer(q, "A", "Short answer.", "The very long answer with explanation.", true);
@@ -51,7 +53,8 @@ public class BasicTest extends UnitTest {
     
     @Test
     public void createMultiAnswers() {
-        Question q = new Question("Question 3", "Short display q3", "Long display question three here.");
+        Category category = new Category("Cat3");
+        Question q = new Question("Question 3", "Short display q3", "Long display question three here.", category);
         q.save();
         
         Answer a = new Answer(q, "A", "Short answer A.", "The very long answer with explanation for A", true);

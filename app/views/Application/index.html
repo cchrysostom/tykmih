@@ -4,16 +4,37 @@
 #{if questionList.size() > 0}
 
 <div class="questions">
-    <h2>Question list</h2>
+    <h1 class="questions">Question list</h1>
     
     #{list items:questionList, as:'ques'}
     <div class="questionItem">
+        <h2 class="questionItem">${ques.category.name}</h2>
+        
+        <h3 class="questionItem">
         <span class="questionLabel">
             ${ques.title}
         </span>
         <span class="questionShort">
             ${ques.shortText}
         </span>
+        </h3>
+        
+        <p>
+        <span class="questionLong">
+            ${ques.fullText}
+        </span>
+        </p>
+        
+        #{list items:ques.answers, as:'ans'}
+        <p><span class="answerLabel">${ans.label}</span>.
+           <span class="answerShort">${ans.shortText}</span>--
+           <span class="answerLong">${ans.fullText}</span>
+           #{if ans.isCorrect }
+           <span class="correctAnswer">CORRECT ANSWER!</span>
+           #{/if}
+        </p>
+        #{/list}
+        <hr/>
         
     </div>
     

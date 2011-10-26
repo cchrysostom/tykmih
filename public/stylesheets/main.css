@@ -1,0 +1,18 @@
+h1.questions  { background-color: bisque;
+                  text-align: center; }
+
+h2.questionItem { background-color: darkslateblue;
+                    color: ghostwhite;
+                    text-decoration:underline;}
+
+h3.questionItem { background-color: lightgoldenrodyellow}
+
+.questionLong { font-weight: bold}
+
+.answerLabel { font-weight: bold}
+
+.answerShort { font-weight: normal}
+
+.answerLong { font-style: italic}
+
+.correctAnswer { background-color: gold}

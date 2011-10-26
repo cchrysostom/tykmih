@@ -1,0 +1,73 @@
+Category(C1):
+    name: Ancient Battles
+    
+Category(C2):
+    name: Tactics
+
+Question(Q1):
+    title: Q1
+    shortText: Short Q1 question
+    fullText: The 1000 hoplites carried 20 pounds of water each. Why did they survive?
+    category: C1
+    
+Answer(A1):
+    label: A.
+    shortText: Short A answer
+    fullText: Long A answer. Blah blah blah. The quick brown fox jumps over the lazy dog.
+    isCorrect: false
+    question: Q1
+    
+Answer(A2):
+    label: B.
+    shortText: Short B answer
+    fullText: Long B answer. Blah blah blah. The quick brown fox jumps over the lazy dog.
+    isCorrect: true
+    question: Q1
+
+Answer(A3):
+    label: C.
+    shortText: Short C answer
+    fullText: Long C answer. Engine blows smoke. The quick brown fox jumps over the lazy dog.
+    isCorrect: false
+    question: Q1
+
+Answer(A4):
+    label: D.
+    shortText: Short D answer
+    fullText: Long D answer. Engine blows smoke. The quick brown fox jumps over the lazy dog. Apples eat mice.
+    isCorrect: false
+    question: Q1
+
+Question(Q2):
+    title: Q2
+    shortText: Xerces
+    fullText: When faces the outnumbered Spartans, why did Xerces fail to defeat them quickly?
+    category: C2
+    
+Answer(A5):
+    label: A.
+    shortText: Thirst
+    fullText: LEngine blows smoke. The quick brown fox jumps over the lazy dog. Apples eat mice.And, his forces forget to drink clean water.
+    isCorrect: false
+    question: Q2
+
+Answer(A6):
+    label: B.
+    shortText: Sleep
+    fullText: Engine blows smoke. The Sudhir dog barked, "woo woo." Apples eat mice.And, his forces forget to sleep in water.
+    isCorrect: false
+    question: Q2
+    
+Answer(A7):
+    label: C.
+    shortText: Geography
+    fullText: Leonidas created a bottle neck in the pass of Thermopylae while other Greeks blocked the Persian navy at Artemisium.
+    isCorrect: true
+    question: Q2
+
+Answer(A8):
+    label: D.
+    shortText: Pancakes
+    fullText: Themistocles was joined by the great Horde of Pancakes. He ordered them to assist Leonidas in the Pass of Thermopylae.
+    isCorrect: false
+    question: Q2
