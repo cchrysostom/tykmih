@@ -27,4 +27,8 @@ public class Answer extends Model {
         this.isCorrect = isCorrect;
     }
 
+    @Override
+    public String toString() {
+        return this.label;
+    }
 }
